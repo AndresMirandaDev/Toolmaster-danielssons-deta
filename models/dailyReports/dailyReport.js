@@ -28,7 +28,7 @@ const dailyReportSchema = new mongoose.Schema({
   ],
 });
 
-const DailyReport = mongoose.model('SalaryReport', salaryReportSchema);
+const DailyReport = mongoose.model('DailyReport', dailyReportSchema);
 
 function validateDailyReport(report) {
   const schema = {
@@ -45,5 +45,5 @@ function validateDailyReport(report) {
   return Joi.validate(report, schema);
 }
 
-module.exports.validate = validateSalaryReport;
+module.exports.validate = validateDailyReport;
 module.exports.DailyReport = DailyReport;

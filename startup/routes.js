@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 const home = require('../routes/home');
 const tools = require('../routes/tools');
 const users = require('../routes/users');
@@ -11,6 +10,7 @@ const salaryReports = require('../routes/salaryReports');
 const error = require('../middleware/error');
 const rentedTools = require('../routes/rentedTools');
 const returns = require('../routes/returns');
+const dailyReports = require('../routes/dalyReports');
 
 module.exports = function (app) {
   app.use(express.json());
@@ -23,8 +23,5 @@ module.exports = function (app) {
   app.use('/api/salaryreports', salaryReports);
   app.use('/api/rentedtools', rentedTools);
   app.use('/api/returns', returns);
-
-  
-
-
+  app.use('/api/dailyreports', dailyReports);
 };
