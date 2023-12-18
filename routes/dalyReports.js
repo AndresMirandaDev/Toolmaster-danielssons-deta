@@ -7,7 +7,7 @@ const admin = require('../middleware/admin');
 const authorize = require('../middleware/authorize');
 const validateObjectId = require('../middleware/validateObjectId');
 
-router.get('/', [authorize, admin], async (req, res) => {
+router.get('/', [authorize], async (req, res) => {
   const reports = await DailyReport.find()
     .sort('date')
     .populate('worker', 'name _id')
