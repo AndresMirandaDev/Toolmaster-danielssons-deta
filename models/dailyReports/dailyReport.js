@@ -46,4 +46,4 @@ function validateDailyReport(report) {
 }
 
 module.exports.validate = validateSalaryReport;
-module.exports.SalaryReport = DailyReport;
+module.exports.DailyReport = DailyReport;
