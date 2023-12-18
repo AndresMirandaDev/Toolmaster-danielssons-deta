@@ -38,13 +38,15 @@ router.post('/', authorize, async (req, res) => {
   if (!user)
     return res.status(404).send('User with the given id was not found.');
 
-  await places.forEach(async (place) => {
+  //check if all projects exists
+  for (const place of places) {
     const project = await Project.findById(place.project);
-    if (!project)
+    if (!project) {
       return res
         .status(400)
         .send('One of the project id`s does not match an existing project.');
-  });
+    }
+  }
 
   //check if given project id is an existing project
 
