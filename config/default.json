@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey" : "1234",
+    "db":"mongodb+srv://andresmiranda:messirvemongo@cluster0.z9z9uy5.mongodb.net/?retryWrites=true&w=majority"
+}

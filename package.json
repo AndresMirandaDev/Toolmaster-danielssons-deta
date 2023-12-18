@@ -1,0 +1,41 @@
+{
+  "name": "toolmaster-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage --maxWorkers=1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresMirandaDev/ToolMaster-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresMirandaDev/ToolMaster-backend/issues"
+  },
+  "homepage": "https://github.com/AndresMirandaDev/ToolMaster-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^13.1.0",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.9.1",
+    "winston": "^3.8.2",
+    "winston-mongodb": "^5.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}
